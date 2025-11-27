@@ -2,7 +2,7 @@ def main():
     print("=== SISTEMA DE DIVISÃO DE DESPESAS DE VIAGEM ===")
     print("------------------------------------------------")
 
-    #Definição do titular (quem vai ser o titular do cartão usado)
+    #definição do titular (quem vai ser o titular do cartão usado)
     titular = input("Digite o nome de QUEM vai passar o cartão: ").strip().title()
 
     #cadastro de usuários (Quem vai pagar o consumo depois)
@@ -30,7 +30,7 @@ def main():
             break
 
         try:
-            # Substitui vírgula por ponto para aceitar formato brasileiro (ex: 10,50)
+            #substitui vírgula por ponto para aceitar vírgulas ou pontos (ex: 10,50)
             valor_input = input(f"Valor de '{descricao}': R$ ").replace(',', '.')
             valor = float(valor_input)
 
